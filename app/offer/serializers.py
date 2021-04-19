@@ -10,4 +10,4 @@ class OfferSerializer(serializers.ModelSerializer):
 class ResumeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Resume
-        fields = ('id', 'fullname', 'github', 'phone', 'create_date')
+        fields = ('id', 'fullname', 'github', 'phone', 'email', 'create_date')
