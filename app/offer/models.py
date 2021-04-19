@@ -22,6 +22,7 @@ class Offer(models.Model):
 class Resume(models.Model):
     full_name = models.CharField(max_length=60, verbose_name='full name')
     github = models.URLField(max_length=200, verbose_name='github link')
+    email = models.EmailField(verbose_name='email')
     phone = models.CharField(max_length=20, verbose_name='phone number')
     target_offer = models.ForeignKey(to='offer.Offer', on_delete=models.CASCADE, verbose_name='target offer')
     create_date = models.DateTimeField(auto_now_add=True, verbose_name='create date')
